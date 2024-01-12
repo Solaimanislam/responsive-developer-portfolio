@@ -212,6 +212,7 @@ footer {
 .footer-column {
     width: 50%;
 }
+
 .social-links a {
     margin-right: 25px;
 }
@@ -226,4 +227,58 @@ textarea {
     background:  #FFF;
     border: 0;
     width: 100%;
+}
+.hide {
+    display: none;
+}
+/* responsive styles */
+
+/* Mobile phone */
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+    .skills-container, .resume-container, footer, .about-info-container, .banner, nav, nav > ul {
+        flex-direction: column;
+    }
+    nav > ul {
+        gap: 10px;
+    }
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .banner {
+        padding: 10px;
+    }
+    .banner-title {
+        font-size: 65px;
+    }
+    .btn-primary {
+        margin-bottom: 15px;
+    }
+     #what-i-do-description {
+        padding: 20px;
+    }
+    footer, .about {
+        padding: 10px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"],
+     textarea {
+        width: 60%;
+}
+
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    footer {
+        padding: 30px;
+    }
+    .btn-primary {
+        margin-bottom: 15px;
+    }
+    
+
 }
